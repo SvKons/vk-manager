@@ -3,9 +3,7 @@ package domain;
 public class CommentsInfo {
     private int count;
     private boolean canPost;
-    private boolean canGroupsComment;
-    private boolean canComplain;
-    private boolean canAnswer;
+    private boolean groupsCanPost;
     private boolean canClose;
     private boolean canOpen;
 
@@ -25,28 +23,12 @@ public class CommentsInfo {
         this.canPost = canPost;
     }
 
-    public boolean isCanGroupsComment() {
-        return canGroupsComment;
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setCanGroupsComment(boolean canGroupsComment) {
-        this.canGroupsComment = canGroupsComment;
-    }
-
-    public boolean isCanComplain() {
-        return canComplain;
-    }
-
-    public void setCanComplain(boolean canComplain) {
-        this.canComplain = canComplain;
-    }
-
-    public boolean isCanAnswer() {
-        return canAnswer;
-    }
-
-    public void setCanAnswer(boolean canAnswer) {
-        this.canAnswer = canAnswer;
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
     public boolean isCanClose() {
